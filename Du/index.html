@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our 6 Months 💕 | Will You Be My Valentine?</title>
+    <link rel="stylesheet" href="templatemo-sleeky-pro.css">
+</head>
+<body>
+
+<header class="header" id="header">
+    <nav class="nav-container">
+        <a href="#home" class="logo-container">
+            <span class="logo-text">Fish In The Ocean ❤️</span>
+        </a>
+        <ul class="nav-menu" id="navMenu">
+            <li><a href="#home" class="nav-link active">Our Start</a></li>
+            <li><a href="#services" class="nav-link">Our Journey</a></li>
+            <li><a href="#about" class="nav-link">Our Story</a></li>
+            <li><a href="#contact" class="nav-link">The Question</a></li>
+        </ul>
+        <button class="hamburger" id="hamburger">
+            <span></span><span></span><span></span>
+        </button>
+    </nav>
+</header>
+
+<section id="home" class="hero">
+    <div class="slider-container">
+        <div class="progress-ring">
+            <div class="progress-bar" id="progressBar"></div>
+        </div>
+
+        <div class="slider-stage" id="sliderStage"></div>
+
+        <div class="text-overlay" id="textOverlay">
+            <h2 class="slide-title" id="slideTitle">August 31st 💫</h2>
+            <p class="slide-description" id="slideDescription">
+                The day everything changed.
+                The day we became us.
+                Six months ago, I started my favorite chapter of my life.
+            </p>
+        </div>
+
+        <button class="nav-arrow prev" id="prevArrow"></button>
+        <button class="nav-arrow next" id="nextArrow"></button>
+
+        <div class="controls">
+            <button class="control-btn play-pause-btn" id="playPauseBtn"></button>
+        </div>
+
+        <div class="dots" id="dots"></div>
+        <div class="thumbnails-container" id="thumbnails"></div>
+    </div>
+</section>
+
+<section id="services" class="section services">
+    <div class="section-container">
+        <div class="section-header">
+            <h2 class="section-title">Our Journey So Far 💖</h2>
+            <p class="section-subtitle">
+                Six months. Countless laughs. Endless memories.
+            </p>
+        </div>
+
+        <div class="services-container">
+    <div class="services-tabs">
+        <div class="service-tab active" data-service="start">
+            <span class="service-tab-icon">💫</span>
+            <h3>How We Started</h3>
+        </div>
+        <div class="service-tab" data-service="sixmonths">
+            <span class="service-tab-icon">❤️</span>
+            <h3>Six Months Together</h3>
+        </div>
+        <div class="service-tab" data-service="meaning">
+            <span class="service-tab-icon">💌</span>
+            <h3>What You Mean To Me</h3>
+        </div>
+    </div>
+
+    <div class="services-content">
+        <div class="service-content active" id="start">
+            <h2>The Beginning – 31 August</h2>
+            <p>That was the day everything started. We laughed, we shared dreams, and I knew my life had changed forever.</p>
+            <p>From that first smile to the first adventure, every moment built the foundation of our love story.</p>
+        </div>
+
+        <div class="service-content" id="sixmonths">
+            <h2>Six Months of Us</h2>
+            <p>You became my safe place, my peace, my happiness. Every day together was a reminder of how lucky I am.</p>
+            <p>We’ve grown, laughed, and learned so much together. Six months down, forever to go.</p>
+        </div>
+
+        <div class="service-content" id="meaning">
+            <h2>What You Mean To Me</h2>
+            <p>I choose you. Every single day. You are my confidant, my joy, and my home.</p>
+            <p>With you, life is brighter, every challenge feels lighter, and love feels infinite.</p>
+        </div>
+    </div>
+</div>
+
+    </div>
+</section>
+
+<section id="about" class="section about">
+    <div class="section-container">
+        <div class="section-header">
+            <h2 class="section-title">Our Love Story 💞</h2>
+        </div>
+
+        <div class="stats-futuristic">
+            <div class="stat-futuristic">
+                <h4>6</h4>
+                <p>Months Together</p>
+            </div>
+            <div class="stat-futuristic">
+                <h4>31 Aug</h4>
+                <p>Our Start Date</p>
+            </div>
+            <div class="stat-futuristic">
+                <h4>∞</h4>
+                <p>Memories Ahead</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="contact" class="section contact">
+    <div class="section-container" style="text-align:center;">
+        <h2>Will You Be My Valentine? ❤️</h2>
+        <p>Not just for a day. But for every day I get to love you.</p>
+        <button class="submit-btn" onclick="alert('You just made me the happiest person alive ❤️')">
+            Yes 💖
+        </button>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="footer-content">
+        <div class="footer-bottom">
+            <div>© 2026 — Built with love ❤️</div>
+        </div>
+    </div>
+</footer>
+
+<script src="templatemo-sleeky-scripts.js"></script>
+
+</body>
+</html>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    const tabs = document.querySelectorAll('.service-tab');
+    const contents = document.querySelectorAll('.service-content');
+
+    tabs.forEach(tab => {
+        tab.addEventListener('click', function () {
+            const target = this.dataset.service;
+
+            // Remove active class from all tabs and contents
+            tabs.forEach(t => t.classList.remove('active'));
+            contents.forEach(c => c.classList.remove('active'));
+
+            // Add active class to clicked tab and corresponding content
+            this.classList.add('active');
+            document.getElementById(target).classList.add('active');
+        });
+    });
+});
+</script>
